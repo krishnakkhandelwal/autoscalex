@@ -27,8 +27,8 @@ def create_sequences(X, y, seq_length):
 seq_length = 3
 X_seq, y_seq = create_sequences(X_scaled, y, seq_length)
 
-np.save('D:/Hackathon/Data/X_seq.npy', X_seq)
-np.save('D:/Hackathon/Data/y_seq.npy', y_seq)
+np.save('Data/X_seq.npy', X_seq)
+np.save('Data/y_seq.npy', y_seq)
 
 print("Saved")
 
