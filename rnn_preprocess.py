@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
-data_path = 'D:/Hackathon/Data/genAI_feature_engineered.csv'
+data_path = 'Data/genAI_feature_engineered.csv'
 df = pd.read_csv(data_path)
 
 target_col = 'Scaling_Action'
