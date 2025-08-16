@@ -15,7 +15,7 @@ X_scaled = scaler.fit_transform(X)
 
 df_scaled = pd.DataFrame(X_scaled, columns=feature_cols)
 df_scaled[target_col] = y
-df_scaled.to_csv('D:/Hackathon/Data/genAI_rnn_scaled.csv', index=False)
+df_scaled.to_csv('Data/genAI_rnn_scaled.csv', index=False)
 
 def create_sequences(X, y, seq_length):
     Xs, ys = [], []
