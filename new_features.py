@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-df = pd.read_csv('D:/Hackathon/Data/genAI.csv')
+df = pd.read_csv('Data/genAI.csv')
 
 
 print("Data Summary:")
@@ -69,7 +69,7 @@ df.reset_index(drop=True, inplace=True)
 
 df.drop(['Timestamp', 'Day', 'Hour'], axis=1, inplace=True)
 
-df.to_csv('D:/Hackathon/Data/genAI_feature_engineered.csv', index=False)
+df.to_csv('Data/genAI_feature_engineered.csv', index=False)
 
 
 
@@ -113,4 +113,4 @@ df.reset_index(drop=True, inplace=True)
 df.drop(['Timestamp', 'Day', 'Hour'], axis=1, inplace=True)
 
 # Save to CSV
-df.to_csv('D:/Hackathon/Data/genAI_feature_engineered.csv', index=False)
+df.to_csv('Data/genAI_feature_engineered.csv', index=False)
