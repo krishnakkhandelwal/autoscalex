@@ -38,10 +38,10 @@ plt.savefig('cpu_vs_memory_scaling.png')
 print("EDA complete and visualizations saved as PNG files.")
 
 df['Memory_Usage (%)'] = df['Memory_Usage (%)'].apply(lambda x: max(x, 0))
-
-
 df['Business_Event'] = df['Business_Event'].fillna('None')
 
+df['Day'] = pd.to_numeric(df['Day'], errors='coerce')
+df['Hour'] = pd.to_numeric(df['Hour'], errors='coerce')
 
 df = pd.get_dummies(df, columns=['Business_Event'])
 
