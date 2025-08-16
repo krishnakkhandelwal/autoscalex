@@ -10,9 +10,8 @@ from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv("../Data/genAI_minimal.csv")
 
-le_day = LabelEncoder()
-le_event = LabelEncoder()
-df["Day"] = le_day.fit_transform(df["Day"])
+le= LabelEncoder()
+df["Day"] = le.fit_transform(df["Day"])
 
 X = df[[ "Day", "Hour", "Active_Users", "CPU_Usage (%)", "Memory_Usage (%)",
         "Business_Event_Month-End Reporting", "Business_Event_None", "Business_Event_Payroll Processing",
