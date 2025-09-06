@@ -1,0 +1,38 @@
+{
+  "cost_model": {
+    "horizontal_pods": 12.0,
+    "vertical_scale": 8.0,
+    "cache_boost": 15.0,
+    "db_replicas": 20.0,
+    "cdn_activation": 5.0,
+    "downtime_cost_per_minute": 50000.0,
+    "regulatory_penalty_risk": 2000000.0,
+    "reputation_impact_daily": 10000000.0
+  },
+  "sla_tiers": {
+    "peak_event": {
+      "availability": 99.99,
+      "latency_ms": 100
+    },
+    "business_hours": {
+      "availability": 99.9,
+      "latency_ms": 200
+    },
+    "off_hours": {
+      "availability": 99.5,
+      "latency_ms": 500
+    }
+  },
+  "traffic_shaping": {
+    "cpu_emergency_threshold": 0.95,
+    "cpu_degraded_threshold": 0.85,
+    "memory_emergency_threshold": 0.90,
+    "memory_degraded_threshold": 0.75,
+    "max_delay_multiplier": 2.0
+  },
+  "business_rules": {
+    "payroll_priority_boost": 1.2,
+    "tax_filing_priority_boost": 1.1,
+    "maintenance_penalty": 0.5
+  }
+}
